@@ -1,0 +1,17 @@
+RAG stands for Retrieval-Augmented Generation, a technique that combines information retrieval with text generation.
+RAG was introduced by Lewis et al. in the 2020 paper "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks".
+The key idea of RAG is to retrieve relevant documents and provide them as context to a language model before generating an answer.
+RAG helps language models answer questions about topics not seen during training or that require up-to-date information.
+The retrieval component of RAG searches a knowledge base to find documents most relevant to the user's query.
+The generation component of RAG uses a language model to produce a coherent answer conditioned on the retrieved documents.
+Embeddings are dense vector representations of text that capture semantic meaning; similar texts have similar embeddings.
+Cosine similarity measures the angle between two embedding vectors and is commonly used to rank document relevance.
+Chunking is the process of splitting long documents into smaller overlapping pieces before indexing them.
+A vector store (also called a vector database) stores embeddings and supports efficient similarity search.
+Popular vector stores include FAISS, Chroma, Pinecone, Weaviate, and Qdrant.
+The context window of a language model limits how much retrieved text can be passed alongside a query.
+Hybrid search combines dense vector retrieval with traditional keyword (BM25) retrieval for better results.
+Re-ranking models score candidate documents a second time to improve the quality of the final retrieved set.
+RAG reduces hallucinations by grounding the language model's response in factual retrieved documents.
+Evaluation metrics for RAG include faithfulness (is the answer supported by the context?) and answer relevance.
+LangChain and LlamaIndex are popular frameworks that simplify building RAG pipelines in Python.

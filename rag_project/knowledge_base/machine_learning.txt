@@ -1,0 +1,15 @@
+Machine learning is a subset of artificial intelligence that enables computers to learn from data.
+Supervised learning uses labeled training data to learn a mapping from inputs to outputs.
+Unsupervised learning discovers hidden patterns in data without labeled examples.
+Reinforcement learning trains agents to make decisions by rewarding desirable behavior.
+A neural network is a model inspired by the human brain consisting of interconnected layers of nodes.
+Deep learning uses neural networks with many layers to learn complex representations from raw data.
+Overfitting occurs when a model learns the training data too well and performs poorly on new data.
+Regularization techniques such as dropout and L2 penalty help reduce overfitting.
+A training set is used to fit the model; a validation set tunes hyperparameters; a test set evaluates final performance.
+Gradient descent is an optimization algorithm that iteratively adjusts model parameters to minimize a loss function.
+The learning rate controls how large each update step is during gradient descent.
+Cross-validation estimates model performance by training and evaluating on different subsets of the data.
+Feature engineering is the process of selecting and transforming raw data into features suitable for a model.
+Scikit-learn is a popular Python library providing tools for classification, regression, and clustering.
+Transfer learning reuses a pre-trained model on a new but related task to save training time and data.
