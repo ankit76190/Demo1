@@ -1,0 +1,8 @@
+# RAG project uses only the Python standard library.
+# No third-party packages are required to run rag.py or test_rag.py.
+#
+# Optional – only needed if you add a real LLM integration:
+#
+# openai>=1.0.0          # OpenAI GPT-3.5 / GPT-4
+# anthropic>=0.20.0      # Anthropic Claude
+# ollama>=0.1.0          # Local models via Ollama

@@ -1,0 +1,15 @@
+A large language model (LLM) is a neural network trained on vast amounts of text to predict and generate human-like text.
+GPT (Generative Pre-trained Transformer) is a family of LLMs developed by OpenAI.
+The Transformer architecture, introduced in the 2017 paper "Attention is All You Need", underpins most modern LLMs.
+Self-attention allows a Transformer to weigh the importance of different words in a sequence when processing each word.
+Pre-training exposes an LLM to a large text corpus so it learns general language patterns and world knowledge.
+Fine-tuning adapts a pre-trained LLM to a specific task or domain using a smaller labeled dataset.
+Prompt engineering is the art of crafting inputs to elicit accurate and useful responses from an LLM.
+In-context learning lets an LLM solve new tasks by including examples directly in the prompt without updating weights.
+Tokens are the basic units of text that LLMs process; a token is roughly 4 characters or 0.75 words in English.
+The context window of an LLM is the maximum number of tokens it can process in a single forward pass.
+Hallucination refers to an LLM generating plausible-sounding but factually incorrect information.
+Instruction tuning trains an LLM to follow natural language instructions rather than just complete text.
+RLHF (Reinforcement Learning from Human Feedback) improves LLM alignment with human preferences.
+Open-source LLMs such as Llama, Mistral, and Falcon can be run locally without API fees.
+Temperature is a sampling parameter that controls the randomness of an LLM's output; lower values are more deterministic.
