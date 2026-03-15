@@ -1,0 +1,96 @@
+# Sample Knowledge Base
+# =====================
+# This file acts as the "knowledge base" for the RAG demo.
+# Each document is separated by a blank line followed by "---".
+# Feel free to replace or extend these passages with your own content.
+
+---
+Python is a high-level, interpreted programming language known for its clear
+syntax and readability. Created by Guido van Rossum and first released in 1991,
+Python supports multiple programming paradigms, including structured,
+object-oriented, and functional programming. It is widely used in web
+development, data science, artificial intelligence, and scientific computing.
+Python's extensive standard library and rich ecosystem of third-party packages
+make it one of the most popular programming languages in the world.
+
+---
+Machine learning is a branch of artificial intelligence that focuses on building
+systems that learn from and make decisions based on data. Instead of being
+explicitly programmed to perform a task, machine learning models improve their
+performance through experience. Common approaches include supervised learning,
+where the model trains on labelled examples; unsupervised learning, where the
+model finds patterns in unlabelled data; and reinforcement learning, where an
+agent learns by interacting with an environment and receiving rewards or
+penalties.
+
+---
+A neural network is a computational model loosely inspired by the structure of
+the human brain. It consists of layers of interconnected nodes (neurons) that
+transform input data through a series of weighted operations and non-linear
+activation functions. Deep learning refers to neural networks with many hidden
+layers. Deep networks have achieved state-of-the-art results in image
+recognition, natural language processing, speech recognition, and game playing.
+Training a deep neural network requires large amounts of labelled data and
+significant computational resources, often provided by GPUs or TPUs.
+
+---
+Transformers are a type of deep learning architecture introduced in the paper
+"Attention Is All You Need" (Vaswani et al., 2017). They rely on a mechanism
+called self-attention to weigh the relevance of different parts of the input
+when producing each part of the output. Transformers replaced recurrent neural
+networks (RNNs) as the dominant architecture for natural language processing
+tasks such as translation, summarisation, and question answering. Models like
+BERT, GPT, and T5 are all based on the Transformer architecture.
+
+---
+Retrieval-Augmented Generation (RAG) is an AI framework that combines
+information retrieval with text generation. A RAG system first retrieves
+relevant documents from a knowledge base using semantic search, then passes
+those documents as context to a language model which generates a response. RAG
+reduces hallucination because the model is grounded in retrieved facts rather
+than relying solely on its training data. It also allows knowledge to be updated
+without retraining the language model by simply updating the document store.
+
+---
+Vector databases are specialised data stores designed to efficiently index and
+search high-dimensional vectors. They are a core component of modern AI
+applications because machine learning models represent text, images, and audio
+as dense numerical vectors (embeddings). Given a query vector, a vector database
+returns the most similar stored vectors using approximate nearest-neighbour (ANN)
+algorithms such as HNSW or IVF. Popular vector databases include Pinecone,
+Weaviate, Qdrant, Milvus, and ChromaDB.
+
+---
+Embeddings are fixed-length numerical representations of data (text, images,
+audio, etc.) produced by machine learning models. In natural language processing,
+sentence embeddings map sentences to points in a high-dimensional space so that
+semantically similar sentences are close together. Models such as
+sentence-transformers (e.g., all-MiniLM-L6-v2) produce embeddings that are
+small, fast, and suitable for semantic search without requiring a paid API.
+OpenAI also provides embedding endpoints (text-embedding-3-small / large) for
+higher-quality embeddings at a cost.
+
+---
+ChromaDB is an open-source, in-process vector database for AI applications. It
+can run entirely in memory or persist data to disk. ChromaDB supports multiple
+embedding backends and provides a simple Python API for adding documents,
+querying by similarity, and filtering by metadata. Because it runs in-process
+it requires no separate server, making it ideal for prototyping and learning RAG
+pipelines before moving to a production-grade vector store.
+
+---
+Prompt engineering is the practice of carefully designing the input to a
+language model to elicit the best possible output. In a RAG system, the prompt
+typically has three parts: a system instruction that describes the model's role,
+retrieved context passages, and the user's question. Effective prompts are clear
+about how the model should use the provided context, specify the desired format
+of the answer, and include instructions to say "I don't know" when the context
+does not contain sufficient information.
+
+---
+The Python requests library is a simple, human-friendly HTTP library. It allows
+you to send HTTP/1.1 requests with methods such as GET and POST. You can add
+headers, form data, multipart files, and parameters with simple Python
+dictionaries. Requests automatically handles cookies and redirects. It is one of
+the most downloaded Python packages and is widely used for interacting with REST
+APIs in data pipelines, web scraping, and testing.
